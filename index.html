@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join Solid</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
   </head>
   <body>    
@@ -12,7 +12,7 @@
   <section class="section">
     <div class="container">
       <h1 class="title">
-        Welcome to Solid!
+        Welcome to your chat!
       </h1>
 
       <section id="welcome">
@@ -37,8 +37,8 @@
     </div>
   </section>
 
-  <script src="https://melvincarvalho.github.io/helloworld/scripts/solid-auth-client.bundle.js"></script>
-  <script src="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"></script>
+  <script src="scripts/solid-auth-client.bundle.js"></script>
+  <script src="scripts/rdflib.min.js"></script>
     
   <script>
     function renderLogin(webId) {
@@ -78,7 +78,7 @@
       let logout = document.getElementById('logout')
       
       // login and logout buttons
-      const popupUri = 'https://melvincarvalho.github.io/helloworld/popup.html'
+      const popupUri = 'popup.html'
       login.addEventListener('click', () => solid.auth.popupLogin({ popupUri }))
       logout.addEventListener('click', () => solid.auth.logout())
         
