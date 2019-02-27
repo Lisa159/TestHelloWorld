@@ -37,8 +37,8 @@
     </div>
   </section>
 
-  <script src="https://github.com/Lisa159/TestHelloWorld/blob/master/scripts/solid-auth-client.bundle.js"></script>
-  <script src="https://github.com/Lisa159/TestHelloWorld/blob/master/scripts/rdflib.min.js"></script>
+  <script src="https://github.com/Lisa159/TestHelloWorld/scripts/solid-auth-client.bundle.js"></script>
+  <script src="https://github.com/Lisa159/TestHelloWorld/scripts/rdflib.min.js"></script>
     
   <script>
     function renderLogin(webId) {
@@ -78,7 +78,7 @@
       let logout = document.getElementById('logout')
       
       // login and logout buttons
-      const popupUri = 'https://github.com/Lisa159/TestHelloWorld/blob/master/popup.html'
+      const popupUri = 'https://github.com/Lisa159/TestHelloWorld/popup.html'
       login.addEventListener('click', () => solid.auth.popupLogin({ popupUri }))
       logout.addEventListener('click', () => solid.auth.logout())
         
